@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  body {
+    background-color: hsl(0, 0%, 0%);
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Newsreader', serif;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  /* <header> */
+  header {
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1;
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header h1 {
+    margin-right: auto;
+    font-size: 40px;
+    color: rgb(255, 0, 51);
+    text-shadow: 1px 2px hsla(0, 0%, 0%, 0.911);
+    position: relative;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  
+  }
+  nav a:hover{
+    color:black;
+  }
+  /* </header> */
+  /* <.hero> */
+  
+  .hero {
+    background-color: rgb(0, 0, 0);
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "box1 box2 box3"
+      "box4 box2 box5";
+  }
+ 
+  .img1 {
+    background-image: url("pictures/travis.jpg");
+    background-size: cover;
+    grid-area: box1;
+  }
+  .img2 {
+    background-image: url("pictures/ye.jpg");
+    background-size:contain;
+    grid-area: box2;
+    background-position: center;
+  }
+  .img3 {
+    background-image: url("pictures/playboi.jpg");
+    background-size: cover;
+    grid-area: box3;
+    background-position: center;
+  }
+  .img4 {
+    background-image: url("pictures/weeknd.jpg");
+    background-size: cover;
+    grid-area: box4;
+  }
+  .img5 {
+    background-image: url("pictures/ke.jpg");
+    background-size: cover;
+    grid-area: box5;
+    background-position: center;
+  }
+  .icons img{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px;
+    border-color: aliceblue;
+  }
+.icons img:hover{
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    padding-top:100px;
+    padding-left:100px;
+}
+
+#gif{
+    justify-content: left;
+}
+.main img{
+    
+    margin:0px;
+}
+#pfont{
+    margin-top: 30px;
+    height:190px;
+}
+#gif{
+    margin-top:70px;
+    height:150px;
+}
+#font{
+    height:150px;
+
+}
+.main video{
+    padding-top:50px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 200px;
+    right: 500px;
+    width:825px;
+    height:100%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html"><img src="pictures/title.png" alt="" /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="img1"></div>
+      <div class="img2"></div>
+      <div class="img3"></div>
+      <div class="img4"></div>
+      <div class="img5"></div>
+    </div>
+
+    <hr />
+    <div class="icons">
+      <img
+        src="pictures/ye main.jpg"
+        alt="ye icon"
+        onclick="changeImage(this); Ye(this)"
+      />
+      <!-- <img
+        src="pictures/ye main.jpg"
+        onclick="changeImage(this)"
+        alt="Click me"
+      /> -->
+      <img
+        src="pictures/drake main.jpg"
+        alt="drake icon"
+        onclick="changeImage(this) ;drake(this)"
+      />
+      />
+
+      <img
+        src="pictures/metro.jpg"
+        alt="metro icon"
+        onclick="changeImage(this); metro(this) "
+      />
+      <img
+        src="pictures/scotty.jpg"
+        alt="travis icon"
+        onclick="changeImage(this,travis(this))"
+      />
+      <img
+        src="pictures/don.jpg"
+        alt="don icon"
+        onclick="changeImage(this);don(this)"
+      />
+      <img
+        src="pictures/future.jpg"
+        alt="future icon"
+        onclick="changeImage(this);future(this)"
+      />
+      <img
+        id="bal"
+        src="pictures/weeknd main.jpg"
+        alt="weeknd icon"
+        onclick="changeImage(this);weeknd(this)"
+      />
+    </div>
+    <hr />
+    <div class="main">
+      <img
+        id="targetImage"
+        src="pictures/playmain.jpg"
+        alt=""
+        height="700"
+        width="700"
+      />
+      <!-- <img src="pictures/playmain.jpg" id="targetImage" alt="Target Image" /> -->
+      <img src="pictures/font.jpg" id="pfont" alt="" />
+      <img
+        src="https://media1.tenor.com/m/azCllTVTjRQAAAAC/iluminati-eye.gif"
+        alt=""
+        id="gif"
+      />
+
+      <video id="targetVid" width="640" height="360" controls>
+        <source src="video/opium.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
